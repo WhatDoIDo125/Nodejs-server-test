@@ -106,7 +106,7 @@
 
 				// Create client and attempt connection
 				client = new Client( io );
-				client.connect( "44.229.200.200", nickname );
+				client.connect( location.origin, nickname );
 
 				// Update connection status
 				client.on( "connect", function()
